@@ -30,7 +30,6 @@ export const BigBtn = styled.a`
   border-radius: var(--border-radius);
   padding: 1.25rem 1.75rem;
   font-size: var(--fz-sm);
-  font-family: var(--font-mono);
   line-height: 1;
   text-decoration: none;
   cursor: pointer;

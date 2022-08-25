@@ -8,7 +8,7 @@ const Hero = () => {
   const three = <h3 className="big-heading">I build things for the web.</h3>;
 
   const four = (
-    <p>
+    <p className="description">
       I'm a Front-end engineer specializing in building interactive and
       responsive websites for the web. Currently, I am focused on building
       accessible single page applications using React and other new
@@ -58,6 +58,7 @@ const StyledHeroSection = styled.section`
   }
   h2 {
     white-space: nowrap;
+    font-size: clamp(40px, 6vw, 80px);
   }
   h3 {
     margin-top: 10px;
@@ -66,7 +67,7 @@ const StyledHeroSection = styled.section`
     font-size: clamp(40px, 4vw, 80px);
     font-weight: 700;
   }
-  p {
+  .description {
     margin: 20px 0 0;
     max-width: 540px;
     letter-spacing: -1px;

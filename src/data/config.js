@@ -18,4 +18,26 @@ module.exports = {
       url: "/#contact",
     },
   ],
+  socialMedia: [
+    {
+      name: "GitHub",
+      url: "https://github.com/Usmonkul",
+    },
+    {
+      name: "Instagram",
+      url: "#",
+    },
+    {
+      name: "Twitter",
+      url: "#",
+    },
+    {
+      name: "Linkedin",
+      url: "https://www.linkedin.com/in/usmonkul-khakimov-719228193/",
+    },
+    {
+      name: "Codepen",
+      url: "https://codepen.io/usmon",
+    },
+  ],
 };

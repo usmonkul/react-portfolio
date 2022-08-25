@@ -1,16 +1,15 @@
 import "./App.styles.js";
-import Header from "./components/header/header.component";
 import Hero from "./components/hero/hero.component.jsx";
 import styled from "styled-components";
+import Layout from "./components/layout/layout.component.jsx";
 
 const App = () => {
   return (
-    <div className="App">
-      <Header />
-      <StyledMainContainer>
-        <Hero className="fillHeight" />
+    <Layout>
+      <StyledMainContainer className="fillHeight">
+        <Hero />
       </StyledMainContainer>
-    </div>
+    </Layout>
   );
 };
 

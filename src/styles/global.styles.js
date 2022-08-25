@@ -1,8 +1,10 @@
 import { createGlobalStyle } from "styled-components";
+import fonts from "./fonts";
 
 import variables from "./variables";
 
 const GlobalStyle = createGlobalStyle`
+  ${fonts}
   ${variables};
   html {
     box-sizing: border-box;
@@ -65,7 +67,7 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     background-color: var(--navy);
     color: var(--slate);
-    font-family: "Roboto Mono", monospace;
+    font-family: var(--font-sans);
     font-size: var(--fz-xl);
     line-height: 1.3;
     @media (max-width: 480px) {

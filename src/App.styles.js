@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import variables from "./styles/variables";
 
 export const SmallBtn = styled.a`
   color: var(--green);

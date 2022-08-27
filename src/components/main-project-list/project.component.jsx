@@ -4,7 +4,7 @@ import { myProjects } from "../../data/config";
 import Card from "./project-card.component";
 
 const Project = () => {
-  const [showMore, setShowMore] = useState(true);
+  const [showMore, setShowMore] = useState(false);
 
   const GRID_LIMIT = 6;
   const firstSix = myProjects.slice(0, GRID_LIMIT);

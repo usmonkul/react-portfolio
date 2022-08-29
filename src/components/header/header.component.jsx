@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { navLinks } from "../../data/config";
-import { SmallBtn, BigBtn } from "../../App.styles";
+import { BigBtn } from "../../App.styles";
+import Menu from "../menu/menu.component";
 
 const Header = () => {
   return (
@@ -28,6 +29,7 @@ const Header = () => {
             </BigBtn>
           </div>
         </StyledLinks>
+        <Menu />
       </StyledNav>
     </HeaderContainer>
   );
@@ -68,6 +70,7 @@ const StyledNav = styled.nav`
     a {
       color: var(--green);
       flex-shrink: 0;
+      font-size: clamp(25px, 5vw, 28px);
       &:hover,
       &:focus {
         opacity: 0.6;

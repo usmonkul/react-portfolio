@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { email } from "../../data/config";
 
 const Hero = () => {
   const one = <h1>Hi, my name is</h1>;
@@ -17,7 +18,12 @@ const Hero = () => {
   );
 
   const five = (
-    <a className="email-link" href="https://" target="_blank" rel="noreferrer">
+    <a
+      className="email-link"
+      href={`mailto:${email}`}
+      target="_blank"
+      rel="noreferrer"
+    >
       Reach at me!
     </a>
   );

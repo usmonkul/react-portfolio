@@ -21,7 +21,7 @@ const Header = () => {
           <div>
             <BigBtn
               className="resume-button"
-              href="../../assets/Usmon-Khakim.pdf"
+              href="https://www.canva.com/design/DAFE2ZMuubc/InyJ-5X6FTAkkWIzdK9HBA/view?utm_content=DAFE2ZMuubc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -121,8 +121,9 @@ const Menu = () => {
             )}
 
             <BigBtn
-              href="../../assets/Usmon-Khakim.pdf"
+              href="https://www.canva.com/design/DAFE2ZMuubc/InyJ-5X6FTAkkWIzdK9HBA/view?utm_content=DAFE2ZMuubc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
               className="resume-link"
+              target="_blank"
             >
               Resume
             </BigBtn>

@@ -1,4 +1,3 @@
-# Getting Started with Create React App
+# Usmon Khakim
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-# react-portfolio
+Check it out: [Live](https://usmon-khakim.netlify.app/).

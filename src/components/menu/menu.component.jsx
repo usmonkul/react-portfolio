@@ -120,7 +120,10 @@ const Menu = () => {
               </ol>
             )}
 
-            <BigBtn href="/resume.pdf" className="resume-link">
+            <BigBtn
+              href="../../assets/Usmon-Khakim.pdf"
+              className="resume-link"
+            >
               Resume
             </BigBtn>
           </nav>

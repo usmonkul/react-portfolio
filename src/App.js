@@ -5,6 +5,7 @@ import Layout from "./components/layout/layout.component.jsx";
 import Contact from "./components/cta/cta.component.jsx";
 import About from "./components/about/about.component.jsx";
 import Project from "./components/main-project-list/project.component.jsx";
+import Jobs from "./components/education/jobs.component.jsx";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <StyledMainContainer className="fillHeight">
         <Hero />
         <About />
+        <Jobs />
         <Project />
         <Contact />
       </StyledMainContainer>

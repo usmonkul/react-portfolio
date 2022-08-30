@@ -21,7 +21,7 @@ const Header = () => {
           <div>
             <BigBtn
               className="resume-button"
-              href="/resume.pdf"
+              href="../../assets/Usmon-Khakim.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >

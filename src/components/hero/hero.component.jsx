@@ -2,37 +2,25 @@ import styled from "styled-components";
 import { email } from "../../data/config";
 
 const Hero = () => {
-  const one = <h1>Hi, my name is</h1>;
-
-  const two = <h2 className="big-heading">Khakimov Usmonkul.</h2>;
-
-  const three = <h3 className="big-heading">I build things for the web.</h3>;
-
-  const four = (
-    <p className="description">
-      I'm a Front-end engineer specializing in building interactive and
-      responsive websites for the web. Currently, I am focused on building
-      accessible single page applications using React and other new
-      technologies.
-    </p>
-  );
-
-  const five = (
-    <a
-      className="email-link"
-      href={`mailto:${email}`}
-      target="_blank"
-      rel="noreferrer"
-    >
-      Reach at me!
-    </a>
-  );
-  const items = [one, two, three, four, five];
   return (
     <StyledHeroSection>
-      {items.map((item, i) => (
-        <div key={i}>{item}</div>
-      ))}
+      <h1>Hi, my name is</h1>
+      <h2 className="big-heading">Khakimov Usmonkul.</h2>
+      <h4 className="big-heading">I build things for the web.</h4>
+      <p className="description">
+        I'm a Front-end engineer specializing in building interactive and
+        responsive websites for the web. Currently, I am focused on building
+        accessible single page applications using React and other new
+        technologies.
+      </p>
+      <a
+        className="email-link"
+        href={`mailto:${email}`}
+        target="_blank"
+        rel="noreferrer"
+      >
+        Reach at me!
+      </a>
     </StyledHeroSection>
   );
 };
@@ -59,7 +47,7 @@ const StyledHeroSection = styled.section`
       margin: 0 0 20px 2px;
     }
   }
-  h3 {
+  h4 {
     margin-top: 10px;
     color: var(--slate);
     line-height: 0.9;

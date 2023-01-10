@@ -29,7 +29,7 @@ module.exports = {
     },
     {
       name: "Twitter",
-      url: "#",
+      url: "https://twitter.com/usmonkul",
     },
     {
       name: "Linkedin",
@@ -42,6 +42,14 @@ module.exports = {
   ],
   myProjects: [
     {
+      title: "Manage Landing page",
+      github: "https://github.com/Usmonkul/manage-landing-page",
+      external: "https://manage-l-pages.netlify.app/",
+      tech: ["HTML", "Tailwind CSS", "JavaScript", "Swiper"],
+      showInProjects: true,
+      info: "Fully Responsive website with Graphs and Sliders",
+    },
+    {
       title: "myTeam",
       github: "https://github.com/Usmonkul/myteam",
       external: "https://myteam-huh.netlify.app",
@@ -53,7 +61,7 @@ module.exports = {
       title: "Simplify",
       github: "https://github.com/Usmonkul/simplify.io",
       external: "https://simlifyio.netlify.app",
-      tech: ["HTML", "sCSS", "JavaScript"],
+      tech: ["HTML", "SCSS", "JavaScript"],
       showInProjects: true,
       info: "Simplify.io is Digital Learning platform website. it fully responsive and multi page website.",
     },
@@ -76,7 +84,7 @@ module.exports = {
     {
       title: "Loop studio",
       github: "https://github.com/Usmonkul/loopstudio",
-      external: "https://loopstudios-uk.netlify.app",
+      external: "http://us-jamming.surge.sh/",
       tech: ["HTML", "SCSS", "JavaScript"],
       showInProjects: true,
       info: "Loop studio is landing page, and modern looking website to sell VR instruments.",
@@ -109,7 +117,7 @@ module.exports = {
       title: "Monsters Rolodex",
       github: "https://github.com/Usmonkul/monsters-rolodex",
       external: "http://monsters-yard.surge.sh/",
-      tech: ["HTML", "SCSS", "React"],
+      tech: ["HTML", "SCSS", "React", "TypeScript"],
       showInProjects: true,
       info: "Monster Rolodex is simple React app to see and search Monsters.",
     },

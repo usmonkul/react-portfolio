@@ -13,6 +13,10 @@ const Jobs = () => {
             <div>
               <ul>
                 <li>
+                  I've an experience of 1+ year of building modern, dynamic, and
+                  single-page web applications as a Freelancer.
+                </li>
+                <li>
                   I have been learning new technologies and web development
                   since September 2019, when I first enrolled at Woosong
                   University in South Korea. As I'm majored in AI & BigData,
@@ -23,12 +27,8 @@ const Jobs = () => {
                   My passion to learn Web development were greater, so I learned
                   Web development at the same time via online platforms like
                   Udemy, Codeacademy, MohirDev and etc. I grab the knowledge of
-                  HTML, CSS, JavaScript, React, Git, and other important
-                  technologies.
-                </li>
-                <li>
-                  I've built more than 30 individual projects and some freelance
-                  projects as a Freelancer.
+                  HTML, CSS, JavaScript, TypeScript, React, Git, and other
+                  important technologies.
                 </li>
               </ul>
             </div>

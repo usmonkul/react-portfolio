@@ -6,8 +6,9 @@ const About = () => {
   const skills = [
     "JavaScript (ES6+)",
     "TypeScript",
-    "React",
-    "HTML & CSS",
+    "React & Redux",
+    "HTML5 & CSS3",
+    "Tailwind CSS",
     "Bootstrap",
     "Git & GitHub",
     "jQuery",
@@ -33,7 +34,7 @@ const About = () => {
             <p>
               During my university and self-studying period, I built around 30
               interactive and responsive websites. Currently, I'm focused on
-              learning React.js.
+              learning advanced React.js and TypeScript .
             </p>
             <p>Here are a few technologies I’ve been working with recently:</p>
           </div>

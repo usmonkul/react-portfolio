@@ -1,39 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import { experience } from "../../data/config";
 
 const Jobs = () => {
+  const [activeTab, setActiveTab] = useState("intern");
   return (
     <StyledJobsSection id="jobs">
       <h2 className="numbered-heading">Where I’ve Worked</h2>
       <div className="inner">
-        <StyledTabPanels>
-          <StyledTabPanel>
-            <h3>Self Learner & Freelancer</h3>
-            <p className="range"> September 2019 - Present</p>
-            <div>
-              <ul>
-                <li>
-                  I've an experience of 1+ year of building modern, dynamic, and
-                  single-page web applications as a Freelancer.
-                </li>
-                <li>
-                  I have been learning new technologies and web development
-                  since September 2019, when I first enrolled at Woosong
-                  University in South Korea. As I'm majored in AI & BigData,
-                  I've learned many tools, languages, and algorithms related to
-                  Ai & BigData
-                </li>
-                <li>
-                  My passion to learn Web development were greater, so I learned
-                  Web development at the same time via online platforms like
-                  Udemy, Codeacademy, MohirDev and etc. I grab the knowledge of
-                  HTML, CSS, JavaScript, TypeScript, React, Git, and other
-                  important technologies.
-                </li>
-              </ul>
-            </div>
-          </StyledTabPanel>
-        </StyledTabPanels>
+        <StyledTabList>
+          <StyledBottons isActive={true} onClick={() => setActiveTab("intern")}>
+            Front-end Intern
+          </StyledBottons>
+          <StyledBottons onClick={() => setActiveTab("freelance")}>
+            Freelancer
+          </StyledBottons>
+          <StyledBottons onClick={() => setActiveTab("tutor")}>
+            Tutor
+          </StyledBottons>
+        </StyledTabList>
+        {activeTab === "intern" && <JobInfo data={experience.intern} />}
+        {activeTab === "freelance" && <JobInfo data={experience.freelance} />}
+        {activeTab === "tutor" && <JobInfo data={experience.tutor} />}
       </div>
     </StyledJobsSection>
   );
@@ -41,10 +29,35 @@ const Jobs = () => {
 
 export default Jobs;
 
+export const JobInfo = ({ data }) => {
+  return (
+    <StyledTabPanels>
+      <StyledTabPanel>
+        <h3>
+          <span>{data.title}</span>
+          <span className="company">
+            &nbsp;@&nbsp;
+            <span className="inline-link">{data.company}</span>
+          </span>
+        </h3>
+        <p className="range">{data.date}</p>
+        <div>
+          <ul>
+            {data.description.map((item, index) => {
+              return <li key={index}>{item}</li>;
+            })}
+          </ul>
+        </div>
+      </StyledTabPanel>
+    </StyledTabPanels>
+  );
+};
+
 const StyledJobsSection = styled.section`
   max-width: 700px;
   .inner {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
     @media (max-width: 600px) {
       display: block;
     }
@@ -55,6 +68,54 @@ const StyledJobsSection = styled.section`
   }
 `;
 
+const StyledTabList = styled.div`
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 600px) {
+    flex-direction: row;
+    overflow-x: auto;
+    width: calc(100% + 100px);
+    padding-left: 50px;
+    margin-left: -50px;
+    margin-bottom: 30px;
+  }
+  @media (max-width: 480px) {
+    width: calc(100% + 50px);
+    padding-left: 25px;
+    margin-left: -25px;
+  }
+`;
+const StyledBottons = styled.button`
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: var(--tab-height);
+  padding: 0 20px 2px;
+  border-left: 2px solid var(--lightest-navy);
+  background-color: transparent;
+  color: ${({ isActive }) => (isActive ? "var(--green)" : "var(--slate)")};
+  font-family: var(--font-mono);
+  font-size: var(--fz-xs);
+  text-align: left;
+  white-space: nowrap;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    padding: 0 15px 2px;
+  }
+  @media (max-width: 600px) {
+    padding: 0 15px;
+    border-left: 0;
+    border-bottom: 2px solid var(--lightest-navy);
+    text-align: center;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--light-navy);
+    color: var(--green);
+  }
+`;
 const StyledTabPanels = styled.div`
   position: relative;
   width: 100%;
@@ -91,7 +152,9 @@ const StyledTabPanel = styled.div`
     font-weight: 500;
     line-height: 1.3;
 
-    color: var(--green);
+    .company {
+      color: var(--green);
+    }
   }
   .range {
     margin-bottom: 25px;

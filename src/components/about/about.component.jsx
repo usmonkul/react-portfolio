@@ -1,17 +1,18 @@
 import React from "react";
 import styled from "styled-components";
-import myImage from "../../assets/me1.jpg";
+import myImage from "../../assets/portret.jpg";
 
 const About = () => {
   const skills = [
     "JavaScript (ES6+)",
     "TypeScript",
-    "React & Redux",
+    "Next js",
+    "React",
     "HTML5 & CSS3",
     "Tailwind CSS",
     "Bootstrap",
     "Git & GitHub",
-    "jQuery",
+    "Node - Express js",
   ];
   return (
     <StyledAboutSection id="about">
@@ -20,21 +21,25 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Usmonkul and I enjoy creating things that live
-              on the internet. My interest in Web development started back in
-              2019 when I enrolled for a bachelor's degree in the IT field at my
-              Woosong university.
+              Hello! My name is Usmonkul and I am a dedicated front-end
+              developer with a flair for creating captivating user experiences.
+              My journey into the world of web development began with a
+              Bachelor's degree in Computer Science from Woosong University,
+              where I achieved an outstanding GPA of 4.36 out of 4.50.
             </p>
             <p>
-              Although I majored in an IA and BigData at my university, my
-              strong interest in web development forced me to choose this field.
-              I do love creating outstanding interactive websites using
-              different Front-end tools.
+              I possess a robust skill set in front-end technologies, including
+              HTML, CSS, Sass, Bootstrap, and Tailwind CSS, which I expertly
+              leverage to craft modern and responsive web applications. My
+              proficiency in JavaScript, React, TypeScript, and Next.js empowers
+              me to implement dynamic and innovative functionalities.
             </p>
             <p>
-              During my university and self-studying period, I built around 30
-              interactive and responsive websites. Currently, I'm focused on
-              learning advanced React.js and TypeScript .
+              Throughout my journey as a front-end developer, I have
+              collaborated with diverse teams and demonstrated exceptional
+              communication and teamwork skills. My ability to adapt swiftly to
+              new technologies and continuous learning drive me to stay at the
+              forefront of industry trends.
             </p>
             <p>Here are a few technologies I’ve been working with recently:</p>
           </div>
@@ -77,12 +82,15 @@ const StyledAboutSection = styled.section`
 const StyledText = styled.div`
   ul.skills-list {
     display: grid;
-    grid-template-columns: repeat(2, minmax(140px, 200px));
+    grid-template-columns: repeat(3, minmax(140px, 200px));
     grid-gap: 0 10px;
     padding: 0;
     margin: 20px 0 0 0;
     overflow: hidden;
     list-style: none;
+    @media screen and (max-width: 500px) {
+      grid-template-columns: repeat(2, minmax(140px, 200px));
+    }
     li {
       position: relative;
       margin-bottom: 10px;
@@ -139,6 +147,8 @@ const StyledPic = styled.div`
       filter: grayscale(100%) contrast(1);
       transition: var(--transition);
       width: 100%;
+      height: 300px;
+      object-fit: cover;
     }
     &:before,
     &:after {

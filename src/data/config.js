@@ -149,33 +149,52 @@ module.exports = {
     },
   ],
   experience: {
-    intern: {
-      title: "Front-end Developer Internship ",
-      company: "IDR Envision",
-      date: "March 2023 - May 2023",
+    goqba: {
+      title: "Software Engineer ",
+      company: "GoQba Technology",
+      date: "September 2023 - Present",
       description: [
-        "Do reaserch, Collaborate with project managers, and other engineers to write app's features and functional requairements and analysis",
-        "Draw an inspections app's wireframe and UI design using Figma",
-        "Build website Interface using modern teachnologies and best practices. ",
+        "Developed and managed front-end code for over four websites",
+        "Conducting research and designing single-page websites and components",
+        "Contributed to backend development for the administrative platform, incorporating CRUD operations through Flask and MySQL",
       ],
       stack: [
+        "Python",
+        "Flask",
         "Next.js",
         "React.js",
         "TypeScript",
         "JavaScript",
         "Figma",
-        "Formik",
-        "Auth",
+        "Tailwind CSS",
+        "Notion",
+      ],
+    },
+    intern: {
+      title: "Front-end Developer Internship ",
+      company: "IDR Envision",
+      date: "March 2023 - May 2023",
+      description: [
+        "Build a dynamic administration web app",
+        "Gathered functional and non-functional requirements, and created high-level design diagrams",
+        "Draw wireframe and design website UI using Figma",
+      ],
+      stack: [
+        "React.js",
+        "TypeScript",
+        "JavaScript",
+        "Figma",
+        "Tailwind CSS",
       ],
     },
     freelance: {
       title: "Freelance Web Developer ",
       company: "Freelance",
-      date: "January 2022 - February 2023",
+      date: "January 2021 - February 2023",
       description: [
         "Collaborated with a team of developers or individually to build modern and responsive web applications using best practices.",
         "Build semantically structured web applications.",
-        "Developed, maintained, and shipped production code for client websites primarily using HTML5, CSS3, Sass, JavaScript, and React",
+        "Developed, maintained, and shipped production code for client websites.",
       ],
       stack: [
         "Next.js",
@@ -192,7 +211,7 @@ module.exports = {
       ],
     },
     tutor: {
-      title: "Front-end Developer Internship ",
+      title: "English Language Tutor ",
       company: "Dream Private Education Center",
       date: "July 2018 - August 2019",
       description: [

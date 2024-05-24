@@ -3,13 +3,16 @@ import styled from "styled-components";
 import { experience } from "../../data/config";
 
 const Jobs = () => {
-  const [activeTab, setActiveTab] = useState("intern");
+  const [activeTab, setActiveTab] = useState("goqba");
   return (
     <StyledJobsSection id="jobs">
       <h2 className="numbered-heading">Where I’ve Worked</h2>
       <div className="inner">
         <StyledTabList>
-          <StyledBottons isActive={true} onClick={() => setActiveTab("intern")}>
+          <StyledBottons isActive={true} onClick={() => setActiveTab("goqba")}>
+            Engineer
+          </StyledBottons>
+          <StyledBottons onClick={() => setActiveTab("intern")}>
             Front-end Intern
           </StyledBottons>
           <StyledBottons onClick={() => setActiveTab("freelance")}>
@@ -19,6 +22,7 @@ const Jobs = () => {
             Tutor
           </StyledBottons>
         </StyledTabList>
+        {activeTab === "goqba" && <JobInfo data={experience.goqba} />}
         {activeTab === "intern" && <JobInfo data={experience.intern} />}
         {activeTab === "freelance" && <JobInfo data={experience.freelance} />}
         {activeTab === "tutor" && <JobInfo data={experience.tutor} />}
@@ -47,6 +51,13 @@ export const JobInfo = ({ data }) => {
               return <li key={index}>{item}</li>;
             })}
           </ul>
+        </div>
+        <div>
+          <ol>
+            {data.stack.map((item, index) => {
+              return <li key={index}>{item}</li>;
+            })}
+          </ol>
         </div>
       </StyledTabPanel>
     </StyledTabPanels>
@@ -144,6 +155,21 @@ const StyledTabPanel = styled.div`
         left: 0;
         color: var(--green);
       }
+    }
+  }
+  ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: var(--fz-md);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    li {
+      padding: 5px 10px 2px 10px;
+      color: var(--green);
+      background-color: #142a39;
+      border-radius: 20px;
     }
   }
   h3 {

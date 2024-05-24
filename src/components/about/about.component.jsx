@@ -4,14 +4,14 @@ import myImage from "../../assets/portret.jpg";
 
 const About = () => {
   const skills = [
+    "Python",
     "JavaScript (ES6+)",
     "TypeScript",
-    "Next js",
-    "React",
+    "MySQL",
+    "React & Next js",
+    "Flask",
     "HTML5 & CSS3",
     "Tailwind CSS",
-    "Bootstrap",
-    "Git & GitHub",
     "Node - Express js",
   ];
   return (
@@ -21,25 +21,21 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Usmonkul and I am a dedicated front-end
-              developer with a flair for creating captivating user experiences.
-              My journey into the world of web development began with a
-              Bachelor's degree in Computer Science from Woosong University,
-              where I achieved an outstanding GPA of 4.36 out of 4.50.
+              Hello! My name is Usmonkul, and I am a passionate front-end developer 
+              with a keen eye for creating engaging user experiences. I hold a Bachelor's 
+              degree in Computer Science from Woosong University, where I graduated with an 
+              impressive GPA of 4.36 out of 4.50.
             </p>
             <p>
-              I possess a robust skill set in front-end technologies, including
-              HTML, CSS, Sass, Bootstrap, and Tailwind CSS, which I expertly
-              leverage to craft modern and responsive web applications. My
-              proficiency in JavaScript, React, TypeScript, and Next.js empowers
-              me to implement dynamic and innovative functionalities.
+              I specialize in front-end technologies, including React, JavaScript, Next js, and Tailwind CSS, 
+              which I skillfully use to develop modern and responsive web applications. 
+              My expertise extends to Flask, MySQL, TypeScript, and Express js, enabling me to deliver dynamic 
+              and innovative functionalities.
             </p>
             <p>
-              Throughout my journey as a front-end developer, I have
-              collaborated with diverse teams and demonstrated exceptional
-              communication and teamwork skills. My ability to adapt swiftly to
-              new technologies and continuous learning drive me to stay at the
-              forefront of industry trends.
+              Throughout my career, I have successfully collaborated with diverse teams, 
+              showcasing strong communication and teamwork skills. My adaptability and commitment to 
+              continuous learning drive me to stay ahead of industry trends and rapidly adopt new technologies.
             </p>
             <p>Here are a few technologies I’ve been working with recently:</p>
           </div>

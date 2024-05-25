@@ -10,13 +10,13 @@ const Jobs = () => {
       <div className="inner">
         <StyledTabList>
           <StyledBottons isActive={true} onClick={() => setActiveTab("goqba")}>
-            Engineer
+            GoQba
           </StyledBottons>
           <StyledBottons onClick={() => setActiveTab("intern")}>
-            Front-end Intern
+            IDR Envision
           </StyledBottons>
           <StyledBottons onClick={() => setActiveTab("freelance")}>
-            Freelancer
+            Freelance
           </StyledBottons>
           <StyledBottons onClick={() => setActiveTab("tutor")}>
             Tutor

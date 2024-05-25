@@ -24,23 +24,37 @@ module.exports = {
       url: "https://github.com/Usmonkul",
     },
     {
-      name: "Instagram",
-      url: "#",
-    },
-    {
-      name: "Twitter",
-      url: "https://twitter.com/usmonkul",
-    },
-    {
       name: "Linkedin",
       url: "https://www.linkedin.com/in/usmonkul-khakimov/",
     },
     {
-      name: "Codepen",
-      url: "https://codepen.io/usmon",
+      name: "Twitter",
+      url: "https://x.com/UsmonHakim",
+    },
+    {
+      name: "Instagram",
+      url: "https://www.facebook.com/profile.php?id=61559885794014",
+    },
+    {
+      name: "Hashnode",
+      url: "https://hashnode.com/@usmonkul",
     },
   ],
   myProjects: [
+    {
+      title: "Marico",
+      github: "https://github.com/usmonkul/marico",
+      external: "https://marico-xi.vercel.app/",
+      tech: [
+        "Next js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Prisma",
+        "SQLite",
+      ],
+      showInProjects: true,
+      info: "The Marico website is a cutting-edge web application that helps to connect Creators with their audience.",
+    },
     {
       title: "Movie App",
       github: "https://github.com/Usmonkul/nextjs-movie-app",
@@ -61,6 +75,35 @@ module.exports = {
       info: "Full Stack Movie app. The users can buy a subscription, login and register on the app. Then, they will be able to watch the movies trailer and get information about them.",
     },
     {
+      title: "Natours",
+      github: "https://github.com/Usmonkul/Natours",
+      external: "https://natours-huh.netlify.app",
+      tech: ["HTML", "SCSS", "Fully-Responsive"],
+      showInProjects: true,
+      info: "Natours is fully responsive tour agency website built by only using HTML and SCSS. All the interaction and animations are the result of CSS code. It show the power of CSS.",
+    },
+    {
+      title: "MediMatrix",
+      github: "https://www.figma.com/file/9KdB23BBNdA8izTuWZRTPu/medimatrix?type=design&node-id=0%3A1&mode=design&t=Gds3ust7EHpGnVXw-1",
+      external: "https://www.figma.com/file/9KdB23BBNdA8izTuWZRTPu/medimatrix?type=design&node-id=0%3A1&mode=design&t=Gds3ust7EHpGnVXw-1",
+      tech: [
+        "Figma",
+        "Wireframe",
+        "Design",
+        "UI & UX"
+      ],
+      showInProjects: true,
+      info: "The Medimatix is a medical platform website design. Designed by using Figma.",
+    },
+    {
+      title: "Manage Landing page",
+      github: "https://github.com/Usmonkul/manage-landing-page",
+      external: "https://manage-l-pages.netlify.app/",
+      tech: ["HTML", "Tailwind CSS", "JavaScript", "Swiper"],
+      showInProjects: true,
+      info: "Fully Responsive website with Graphs and Sliders",
+    },
+    {
       title: "Checkie inspection app",
       github: "https://github.com/Usmonkul/checkie-manager",
       external: "https://checkie-manager.vercel.app",
@@ -74,14 +117,6 @@ module.exports = {
       ],
       showInProjects: true,
       info: "Inspection manager app that Inspector able to create inspection target, inspection items, inspectors to monitor inspections on a target place",
-    },
-    {
-      title: "Manage Landing page",
-      github: "https://github.com/Usmonkul/manage-landing-page",
-      external: "https://manage-l-pages.netlify.app/",
-      tech: ["HTML", "Tailwind CSS", "JavaScript", "Swiper"],
-      showInProjects: true,
-      info: "Fully Responsive website with Graphs and Sliders",
     },
     {
       title: "myTeam",
@@ -108,14 +143,6 @@ module.exports = {
       info: "Shortly is website that makes links shorter, and meaningful. it's modern looking website, but only for desktop.",
     },
     {
-      title: "Jamming",
-      github: "https://github.com/Usmonkul/jamming",
-      external: "https://shortly-huh.netlify.app",
-      tech: ["React", "CSS", "JavaScript", "Spotify API"],
-      showInProjects: true,
-      info: "Web app to search songs on Spotify and add favorite songs to playlist",
-    },
-    {
       title: "Loop studio",
       github: "https://github.com/Usmonkul/loopstudio",
       external: "http://us-jamming.surge.sh/",
@@ -124,20 +151,25 @@ module.exports = {
       info: "Loop studio is landing page, and modern looking website to sell VR instruments.",
     },
     {
-      title: "Natours",
-      github: "https://github.com/Usmonkul/Natours",
-      external: "https://natours-huh.netlify.app",
-      tech: ["HTML", "SCSS"],
-      showInProjects: true,
-      info: "Natours is fully responsive tour agency website built by only using HTML and SCSS. All the interaction and animations are the result of CSS code. It show the power of CSS.",
-    },
-    {
       title: "Easy Bank",
       github: "https://github.com/Usmonkul/easybank",
       external: "https://easybank-huh.netlify.app/",
       tech: ["HTML", "SCSS", "JavaScript"],
       showInProjects: true,
       info: "Easy bank is desktop and mobile responsive bank website. Special cards and unique colors are chosen to make the website outstanding. ",
+    },
+    {
+      title: "Checkie",
+      github: "https://www.figma.com/file/bWGmYhyQv5QNr8b46qdMws/CHEKIE?type=design&node-id=0%3A1&mode=design&t=48US4xbwIznI3az8-1",
+      external: "https://www.figma.com/file/bWGmYhyQv5QNr8b46qdMws/CHEKIE?type=design&node-id=0%3A1&mode=design&t=48US4xbwIznI3az8-1",
+      tech: [
+        "Figma",
+        "Wireframe",
+        "Design",
+        "UI & UX"
+      ],
+      showInProjects: true,
+      info: "The Checkie is an ispection platform adminstarion website wireframe.",
     },
     {
       title: "Bookmark Landing page",
@@ -165,8 +197,9 @@ module.exports = {
         "React.js",
         "TypeScript",
         "JavaScript",
-        "Figma",
         "Tailwind CSS",
+        "MySQL",
+        "Figma",
         "Notion",
       ],
     },

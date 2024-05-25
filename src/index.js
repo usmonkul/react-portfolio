@@ -4,12 +4,15 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import GlobalStyle from "./styles/global.styles";
+import SpotlightEffect from "./components/spotlight/spotlight";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <GlobalStyle />
-    <App />
+    <SpotlightEffect>
+      <GlobalStyle />
+      <App />
+    </SpotlightEffect>
   </React.StrictMode>
 );
 
